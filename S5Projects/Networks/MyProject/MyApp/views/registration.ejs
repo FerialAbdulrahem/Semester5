@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-image: url("background2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            }
+        h1 {
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px blue;
+        }
+        .cont {
+            position:relative;
+            left:600px;
+            top:50px;
+            color: white;
+            -webkit-text-stroke: 0.5px black;
+        }
+        .error-message {
+            background-color: rgba(255, 230, 230, 0.9);
+            padding: 10px;
+            margin: 10px auto;
+            border: 1px solid #ff9999;
+            color: #cc0000;
+            width: 50%;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .success-message {
+            background-color: rgba(230, 255, 230, 0.9);
+            padding: 10px;
+            margin: 10px auto;
+            border: 1px solid #99ff99;
+            color: #00cc00;
+            width: 50%;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        
+        <!-- ADD THIS ERROR DISPLAY CODE -->
+        <% if (mongoMessage) { %>
+            <% if (mongoMessage.includes('successfully')) { %>
+                <div class="success-message">
+                    <%= mongoMessage %>
+                </div>
+            <% } else { %>
+                <div class="error-message">
+                    <%= mongoMessage %>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+    <div class="cont">
+        <!-- CHANGE THE FORM ACTION TO '/registration' -->
+        <form method='post' action='/registration'>
+            Username: <br>
+            <input type="text" id="user" name="username"> <br>
+            Password: <br>
+            <input type="password" id="password" name="password"> <br> <br>
+            <input type="submit" id="simple_click" class="btn btn-secondary" value="Register"> <br>
+        </form>
+    </div>
+</body>
+
+</html>
