@@ -1,0 +1,454 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D911718-A3F3-4C3D-A2B1-F6150F2772F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M3_Application</RootNamespace>
+    <AssemblyName>M3_Application</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44361</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Academic\Academic_Login.aspx" />
+    <Content Include="Academic\ApplyAccidentalLeave.aspx" />
+    <Content Include="Academic\ApplyCompensationLeave.aspx" />
+    <Content Include="Academic\ApplyMedicalLeave.aspx" />
+    <Content Include="Academic\ApplyUnpaidLeave.aspx" />
+    <Content Include="Academic\Apply_for_AnnualLeave.aspx" />
+    <Content Include="Academic\ApproveAnnual.aspx" />
+    <Content Include="Academic\ApproveUnpaid.aspx" />
+    <Content Include="Academic\Attendance.aspx" />
+    <Content Include="Academic\DashBoard.aspx" />
+    <Content Include="Academic\Deductions.aspx" />
+    <Content Include="Academic\EvaluateEmployee.aspx" />
+    <Content Include="Academic\Payroll.aspx" />
+    <Content Include="Academic\Performance.aspx" />
+    <Content Include="Academic\Status_Leaves.aspx" />
+    <Content Include="Academic\StyleSheet1.css" />
+    <Content Include="Admin\AddHoliday.aspx" />
+    <Content Include="Admin\AdminDashboard.aspx" />
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\EmployeesPerDept.aspx" />
+    <Content Include="Admin\InitiateAttendance.aspx" />
+    <Content Include="Admin\RejectedMedicals.aspx" />
+    <Content Include="Admin\RemoveApprovedLeave.aspx" />
+    <Content Include="Admin\RemoveDayOff.aspx" />
+    <Content Include="Admin\RemoveDeductions.aspx" />
+    <Content Include="Admin\RemoveHoliday.aspx" />
+    <Content Include="Admin\ReplaceEmployee.aspx" />
+    <Content Include="Admin\StyleSheet1.css" />
+    <Content Include="Admin\UpdateAttendance.aspx" />
+    <Content Include="Admin\UpdateEmploymentStatus.aspx" />
+    <Content Include="Admin\ViewEmployees.aspx" />
+    <Content Include="Admin\ViewWinterPerformance.aspx" />
+    <Content Include="Admin\ViewYesterdayAttendance.aspx" />
+    <Content Include="HR\HR_Approve_Annual_Acc.aspx" />
+    <Content Include="HR\HR_Approve_Comp.aspx" />
+    <Content Include="HR\HR_Approve_Unpaid.aspx" />
+    <Content Include="HR\HR_Deduction_Days.aspx" />
+    <Content Include="HR\HR_Deduction_Hours.aspx" />
+    <Content Include="HR\HR_Deduction_Unpaid.aspx" />
+    <Content Include="HR\HR_Generate_Payroll.aspx" />
+    <Content Include="HR\HR_Home.aspx" />
+    <Content Include="HR\HR_Login.aspx" />
+    <Content Include="Main\LoginChoice.aspx" />
+    <Content Include="HR\StyleSheet1.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Academic\Academic_Login.aspx.cs">
+      <DependentUpon>Academic_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\Academic_Login.aspx.designer.cs">
+      <DependentUpon>Academic_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\ApplyAccidentalLeave.aspx.cs">
+      <DependentUpon>ApplyAccidentalLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\ApplyAccidentalLeave.aspx.designer.cs">
+      <DependentUpon>ApplyAccidentalLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\ApplyCompensationLeave.aspx.cs">
+      <DependentUpon>ApplyCompensationLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\ApplyCompensationLeave.aspx.designer.cs">
+      <DependentUpon>ApplyCompensationLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\ApplyMedicalLeave.aspx.cs">
+      <DependentUpon>ApplyMedicalLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\ApplyMedicalLeave.aspx.designer.cs">
+      <DependentUpon>ApplyMedicalLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\ApplyUnpaidLeave.aspx.cs">
+      <DependentUpon>ApplyUnpaidLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\ApplyUnpaidLeave.aspx.designer.cs">
+      <DependentUpon>ApplyUnpaidLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\Apply_for_AnnualLeave.aspx.cs">
+      <DependentUpon>Apply_for_AnnualLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\Apply_for_AnnualLeave.aspx.designer.cs">
+      <DependentUpon>Apply_for_AnnualLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\ApproveAnnual.aspx.cs">
+      <DependentUpon>ApproveAnnual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\ApproveAnnual.aspx.designer.cs">
+      <DependentUpon>ApproveAnnual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\ApproveUnpaid.aspx.cs">
+      <DependentUpon>ApproveUnpaid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\ApproveUnpaid.aspx.designer.cs">
+      <DependentUpon>ApproveUnpaid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\Attendance.aspx.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\Attendance.aspx.designer.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\Deductions.aspx.cs">
+      <DependentUpon>Deductions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\Deductions.aspx.designer.cs">
+      <DependentUpon>Deductions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\EvaluateEmployee.aspx.cs">
+      <DependentUpon>EvaluateEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\EvaluateEmployee.aspx.designer.cs">
+      <DependentUpon>EvaluateEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\Payroll.aspx.cs">
+      <DependentUpon>Payroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\Payroll.aspx.designer.cs">
+      <DependentUpon>Payroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\Performance.aspx.cs">
+      <DependentUpon>Performance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\Performance.aspx.designer.cs">
+      <DependentUpon>Performance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Academic\Status_Leaves.aspx.cs">
+      <DependentUpon>Status_Leaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Academic\Status_Leaves.aspx.designer.cs">
+      <DependentUpon>Status_Leaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddHoliday.aspx.cs">
+      <DependentUpon>AddHoliday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddHoliday.aspx.designer.cs">
+      <DependentUpon>AddHoliday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EmployeesPerDept.aspx.cs">
+      <DependentUpon>EmployeesPerDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EmployeesPerDept.aspx.designer.cs">
+      <DependentUpon>EmployeesPerDept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\InitiateAttendance.aspx.cs">
+      <DependentUpon>InitiateAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\InitiateAttendance.aspx.designer.cs">
+      <DependentUpon>InitiateAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RejectedMedicals.aspx.cs">
+      <DependentUpon>RejectedMedicals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RejectedMedicals.aspx.designer.cs">
+      <DependentUpon>RejectedMedicals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RemoveApprovedLeave.aspx.cs">
+      <DependentUpon>RemoveApprovedLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RemoveApprovedLeave.aspx.designer.cs">
+      <DependentUpon>RemoveApprovedLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RemoveDayOff.aspx.cs">
+      <DependentUpon>RemoveDayOff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RemoveDayOff.aspx.designer.cs">
+      <DependentUpon>RemoveDayOff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RemoveDeductions.aspx.cs">
+      <DependentUpon>RemoveDeductions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RemoveDeductions.aspx.designer.cs">
+      <DependentUpon>RemoveDeductions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RemoveHoliday.aspx.cs">
+      <DependentUpon>RemoveHoliday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RemoveHoliday.aspx.designer.cs">
+      <DependentUpon>RemoveHoliday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReplaceEmployee.aspx.cs">
+      <DependentUpon>ReplaceEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReplaceEmployee.aspx.designer.cs">
+      <DependentUpon>ReplaceEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateAttendance.aspx.cs">
+      <DependentUpon>UpdateAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateAttendance.aspx.designer.cs">
+      <DependentUpon>UpdateAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateEmploymentStatus.aspx.cs">
+      <DependentUpon>UpdateEmploymentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateEmploymentStatus.aspx.designer.cs">
+      <DependentUpon>UpdateEmploymentStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewEmployees.aspx.cs">
+      <DependentUpon>ViewEmployees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewEmployees.aspx.designer.cs">
+      <DependentUpon>ViewEmployees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewWinterPerformance.aspx.cs">
+      <DependentUpon>ViewWinterPerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewWinterPerformance.aspx.designer.cs">
+      <DependentUpon>ViewWinterPerformance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewYesterdayAttendance.aspx.cs">
+      <DependentUpon>ViewYesterdayAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewYesterdayAttendance.aspx.designer.cs">
+      <DependentUpon>ViewYesterdayAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR_Approve_Annual_Acc.aspx.cs">
+      <DependentUpon>HR_Approve_Annual_Acc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HR_Approve_Annual_Acc.aspx.designer.cs">
+      <DependentUpon>HR_Approve_Annual_Acc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR_Approve_Comp.aspx.cs">
+      <DependentUpon>HR_Approve_Comp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HR_Approve_Comp.aspx.designer.cs">
+      <DependentUpon>HR_Approve_Comp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR_Approve_Unpaid.aspx.cs">
+      <DependentUpon>HR_Approve_Unpaid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HR_Approve_Unpaid.aspx.designer.cs">
+      <DependentUpon>HR_Approve_Unpaid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR_Deduction_Days.aspx.cs">
+      <DependentUpon>HR_Deduction_Days.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HR_Deduction_Days.aspx.designer.cs">
+      <DependentUpon>HR_Deduction_Days.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR_Deduction_Hours.aspx.cs">
+      <DependentUpon>HR_Deduction_Hours.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HR_Deduction_Hours.aspx.designer.cs">
+      <DependentUpon>HR_Deduction_Hours.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR_Deduction_Unpaid.aspx.cs">
+      <DependentUpon>HR_Deduction_Unpaid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HR_Deduction_Unpaid.aspx.designer.cs">
+      <DependentUpon>HR_Deduction_Unpaid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR_Generate_Payroll.aspx.cs">
+      <DependentUpon>HR_Generate_Payroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HR_Generate_Payroll.aspx.designer.cs">
+      <DependentUpon>HR_Generate_Payroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR_Home.aspx.cs">
+      <DependentUpon>HR_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HR_Home.aspx.designer.cs">
+      <DependentUpon>HR_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HR\HR_Login.aspx.cs">
+      <DependentUpon>HR_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR\HR_Login.aspx.designer.cs">
+      <DependentUpon>HR_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\LoginChoice.aspx.cs">
+      <DependentUpon>LoginChoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\LoginChoice.aspx.designer.cs">
+      <DependentUpon>LoginChoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51227</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44361/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

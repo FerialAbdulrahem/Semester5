@@ -1,0 +1,149 @@
+﻿/* Center page both vertically & horizontally */
+/* Navigation buttons */
+.nav-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    background: #4a76a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+    .nav-btn:hover {
+        background: #3a5c82;
+    }
+
+.logout-btn {
+    background: #d9534f;
+}
+
+    .logout-btn:hover {
+        background: #c9302c;
+    }
+
+/* Adjust body padding to prevent buttons overlapping content */
+body {
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* full screen height */
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center; /* vertical center */
+}
+
+/* Small clean card */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 30px;
+    padding: 20px;
+}
+
+.grid-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+.gridview {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Container stays same */
+.container {
+    width: 498px;
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    text-align: center;
+   
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Textbox */
+input[type="text"],
+input[type="password"],
+input[type="Date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Button */
+.container .asp-button,
+.container input[type="submit"],
+.container input[type="button"],
+.container button,
+.container .btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    background: #4a76a8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+    .container input[type="submit"]:hover,
+    .container input[type="button"]:hover,
+    .container button:hover {
+        background: #3a5c82;
+    }
+
+/* Message */
+
+#lblMessage {
+    display: block;
+    max-height: 100px;
+    overflow: auto;
+    word-wrap: break-word;
+    margin-top: 10px;
+    padding: 5px;
+    color: #d9534f;
+}
+

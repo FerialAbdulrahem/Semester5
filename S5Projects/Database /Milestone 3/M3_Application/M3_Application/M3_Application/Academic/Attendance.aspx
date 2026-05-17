@@ -1,0 +1,25 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Attendance.aspx.cs" Inherits="M3_Application.Attendance" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page-wrapper">
+<div class="container">
+        <div>
+            <asp:Label ID="Label1" runat="server" Text="Attendance"></asp:Label></div>
+    </div>
+    <div class="grid-wrapper">
+        <asp:GridView ID="AttendanceTable" runat="server">
+        </asp:GridView>
+        </div>
+    
+            </div>
+    </form>
+</body>
+</html>

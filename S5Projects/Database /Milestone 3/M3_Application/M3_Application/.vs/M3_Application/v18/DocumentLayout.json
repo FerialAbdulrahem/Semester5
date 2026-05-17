@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\M3_Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D911718-A3F3-4C3D-A2B1-F6150F2772F7}|M3_Application\\M3_Application.csproj|c:\\users\\khaled\\onedrive\\desktop\\m3_application\\m3_application\\m3_application\\academic\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{3D911718-A3F3-4C3D-A2B1-F6150F2772F7}|M3_Application\\M3_Application.csproj|solutionrelative:m3_application\\academic\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D911718-A3F3-4C3D-A2B1-F6150F2772F7}|M3_Application\\M3_Application.csproj|c:\\users\\khaled\\onedrive\\desktop\\m3_application\\m3_application\\m3_application\\academic\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D911718-A3F3-4C3D-A2B1-F6150F2772F7}|M3_Application\\M3_Application.csproj|solutionrelative:m3_application\\academic\\dashboard.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D911718-A3F3-4C3D-A2B1-F6150F2772F7}|M3_Application\\M3_Application.csproj|c:\\users\\khaled\\onedrive\\desktop\\m3_application\\m3_application\\m3_application\\main\\loginchoice.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D911718-A3F3-4C3D-A2B1-F6150F2772F7}|M3_Application\\M3_Application.csproj|solutionrelative:m3_application\\main\\loginchoice.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\Final (1).sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\Final (1).sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashBoard.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\M3_Application\\M3_Application\\Academic\\DashBoard.aspx.cs",
+              "RelativeDocumentMoniker": "M3_Application\\Academic\\DashBoard.aspx.cs",
+              "ToolTip": "C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\M3_Application\\M3_Application\\Academic\\DashBoard.aspx.cs",
+              "RelativeToolTip": "M3_Application\\Academic\\DashBoard.aspx.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T14:17:57.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashBoard.aspx",
+              "DocumentMoniker": "C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\M3_Application\\M3_Application\\Academic\\DashBoard.aspx",
+              "RelativeDocumentMoniker": "M3_Application\\Academic\\DashBoard.aspx",
+              "ToolTip": "C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\M3_Application\\M3_Application\\Academic\\DashBoard.aspx",
+              "RelativeToolTip": "M3_Application\\Academic\\DashBoard.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-04T14:16:30.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginChoice.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\M3_Application\\M3_Application\\Main\\LoginChoice.aspx.cs",
+              "RelativeDocumentMoniker": "M3_Application\\Main\\LoginChoice.aspx.cs",
+              "ToolTip": "C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\M3_Application\\M3_Application\\Main\\LoginChoice.aspx.cs",
+              "RelativeToolTip": "M3_Application\\Main\\LoginChoice.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T14:16:15.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Final (1).sql ",
+              "DocumentMoniker": "C:\\Users\\Khaled\\OneDrive\\Desktop\\M3_Application\\Final (1).sql",
+              "RelativeDocumentMoniker": "..\\Final (1).sql",
+              "ToolTip": "Final (1).sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-04T12:25:07.836Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
